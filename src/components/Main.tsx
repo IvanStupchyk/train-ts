@@ -21,6 +21,7 @@ const Main = React.memo((props: MainPropsType) => {
     <div className="main__container">
       <p>{time}</p>
       <p>{amountTaps}</p>
+      <p>From Nastya</p>
       <div className="main__container">
         {
           items.map(it => (
