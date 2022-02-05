@@ -21,7 +21,6 @@ const Main = React.memo((props: MainPropsType) => {
     <div className="main__container">
       <p>{time}</p>
       <p>{amountTaps}</p>
-      <p>something new</p>
       <div className="main__container">
         {
           items.map(it => (
