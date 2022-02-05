@@ -1,22 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MainContainer from "./containers/MainContainer";
+import {Provider} from "react-redux";
+import {store} from "./state/redux-store";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>oh, I changed something</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+        <header className="App-header">
+          <h1>oh, I changed something</h1>
+          <MainContainer/>
+        </header>
+      </Provider>
     </div>
   );
 }
