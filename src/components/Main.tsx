@@ -24,6 +24,7 @@ const Main = React.memo((props: MainPropsType) => {
       <p>From Nastya</p>
       <p>check one commit</p>
       <p>for fetch</p>
+      <p>second</p>
       <div className="main__container">
         {
           items.map(it => (
